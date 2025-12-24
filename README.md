@@ -1,6 +1,6 @@
 # Daily Positive - News Platform Frontend
 
-🔗 **Live Demo:** [Visit the website](https://ai-news-analyzer-one.vercel.app/)
+🔗 **Live Demo:** [Visit the website](https://daily-positive-news1.vercel.app/)
 
 A modern, AI-powered news aggregation platform that delivers global breakthroughs with intelligent categorization and real-time updates.
 
