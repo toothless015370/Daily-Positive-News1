@@ -61,8 +61,8 @@ daily-positive-frontend/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Asifmahmud436/AI-news-analyzer
-cd daily-positive-frontend
+git clone https://github.com/toothless015370/Daily-Positive-News1
+cd Daily-Positive-News1
 ```
 
 2. Install dependencies:
