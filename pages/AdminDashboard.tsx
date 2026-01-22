@@ -50,7 +50,7 @@ const AdminDashboard: React.FC = () => {
     setFormData({
       headline: article.headline,
       body: article.body,
-      countries: article.countries,
+      countries: Array.isArray(article.countries) ? article.countries.join(', ') : article.countries,
       // Format existing date to YYYY-MM-DD for the date input
       created_at: new Date(article.created_at).toISOString().split('T')[0],
     });
@@ -68,6 +68,7 @@ const AdminDashboard: React.FC = () => {
     // Prepare payload (categories omitted so backend AI can fill it)
     const payload = {
       ...formData,
+      countries: formData.countries.split(',').map(c => c.trim()).filter(c => c !== ""),
       created_at: new Date(formData.created_at).toISOString(),
       views: currentEdit ? currentEdit.views : 0,
     };
