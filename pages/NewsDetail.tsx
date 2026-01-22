@@ -78,7 +78,9 @@ const NewsDetail: React.FC = () => {
         <div className="flex items-center gap-6 text-gray-500 text-sm border-b border-gray-100 pb-8">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xs uppercase">
-              {article.countries.charAt(0)}
+              {Array.isArray(article.countries) 
+              ? article.countries.join(', ') 
+              : article.countries} Edition
             </div>
             <span className="font-bold text-gray-800">{article.countries} Edition</span>
           </div>
