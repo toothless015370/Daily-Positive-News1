@@ -43,9 +43,9 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout }) => {
           ) : (
             <div className="flex items-center gap-3">
               <Link to="/login" className="text-gray-600 hover:text-blue-600 font-medium px-4 py-2">Login</Link>
-              <Link to="/register" className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">
+      {/*       <Link to="/register" className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">
                 Register
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>
@@ -81,9 +81,9 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout }) => {
             ) : (
               <>
                 <Link to="/login" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-blue-600 font-medium">Login</Link>
-                <Link to="/register" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 shadow-sm">
+        {/*        <Link to="/register" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 shadow-sm">
                   Register
-                </Link>
+                </Link>    */}
               </>
             )}
           </div>
